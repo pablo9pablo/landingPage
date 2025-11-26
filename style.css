@@ -1,0 +1,215 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Puedes usar Arial si no tienes Roboto */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* COLORES Y VARIABLES */
+:root {
+    --dark-bg: #1F2937;
+    --header-link: #E5E7EB;
+    --hero-p: #E5E7EB;
+    --btn-blue: #3882F6;
+    --quote-bg: #E5E7EB;
+    --placeholder-grey: #6D747D;
+}
+
+/* --- SECCIÓN 1: HEADER & HERO --- */
+.header-section {
+    background-color: var(--dark-bg);
+    color: white;
+    padding-bottom: 100px; /* Espacio extra abajo */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%; /* 15% margen lateral para centrar como en la foto */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--header-link);
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15%;
+    gap: 50px;
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: var(--hero-p);
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    background-color: var(--btn-blue);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Empujar imagen a la derecha */
+}
+
+.image-placeholder {
+    background-color: var(--placeholder-grey);
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* --- SECCIÓN 2: INFO --- */
+.info-section {
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1F2937;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 160px;
+    text-align: center;
+}
+
+.box {
+    width: 160px;
+    height: 160px;
+    border: 4px solid var(--btn-blue);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #5d5d5d;
+}
+
+/* --- SECCIÓN 3: QUOTE --- */
+.quote-section {
+    background-color: var(--quote-bg);
+    padding: 100px 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-container {
+    max-width: 800px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1F2937;
+}
+
+/* --- SECCIÓN 4: CTA --- */
+.cta-section {
+    padding: 100px 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    background-color: var(--btn-blue);
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.btn-secondary {
+    background-color: var(--btn-blue);
+    color: white;
+    border: 2px solid white;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--header-link);
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
